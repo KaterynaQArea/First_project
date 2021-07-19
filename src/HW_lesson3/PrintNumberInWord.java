@@ -2,7 +2,11 @@ package HW_lesson3;
 
 public class PrintNumberInWord {
     public static void main(String[] args) {
-        int number = 9;
+        int num1 = number(7);
+        int num2 = number2(5);
+    }
+
+    public static int number(int number) {
         if (number == 1) {
             System.out.println("One");
         } else if (number == 2) {
@@ -24,6 +28,10 @@ public class PrintNumberInWord {
         } else {
             System.out.println("Other");
         }
+        return number;
+    }
+
+    public static int number2(int number) {
         switch (number) {
             case 1:
                 System.out.println("One");
@@ -55,5 +63,6 @@ public class PrintNumberInWord {
             default:
                 System.out.println("Other");
         }
+        return number;
     }
 }

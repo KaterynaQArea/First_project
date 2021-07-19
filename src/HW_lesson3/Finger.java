@@ -7,7 +7,10 @@ public class Finger {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter the number of the finger:");
         int num = s.nextInt();
+        int f = finger(num);
+    }
 
+    public static int finger(int num) {
         switch (num) {
             case 1:
                 System.out.println("Thumb");
@@ -27,5 +30,6 @@ public class Finger {
             default:
                 System.out.println("The value must be between 1 and 5");
         }
+        return num;
     }
 }

@@ -2,7 +2,11 @@ package HW_lesson3;
 
 public class PrintDayInWord {
     public static void main(String[] args) {
-        int day = 7;
+        int day = day(1);
+        int day2 = day2(7);
+    }
+
+    public static int day(int day) {
         if (day == 1) {
             System.out.println("Monday");
         } else if (day == 2) {
@@ -20,6 +24,10 @@ public class PrintDayInWord {
         } else {
             System.out.println("Not a valid day");
         }
+        return day;
+    }
+
+    public static int day2(int day) {
         switch (day) {
             case 1:
                 System.out.println("Monday");
@@ -45,5 +53,6 @@ public class PrintDayInWord {
             default:
                 System.out.println("Not a valid day");
         }
+        return day;
     }
 }

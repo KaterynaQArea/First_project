@@ -16,7 +16,7 @@ public class SalaryCountBonus {
             System.out.println("The manager will get a bonus");
         } else {
             s = rate;
-            remain = 10 - num;
+            remain = 11 - num;
             System.out.println("To get the bonus you have to make " + remain + " more sale(s)");
         }
         System.out.println("Salary: " + s + "$");
