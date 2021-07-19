@@ -5,7 +5,7 @@ public class CheckOddEven {
         int num = 6;
         if (num % 2 != 0)
             System.out.println("Odd number");
-        else{
+        else {
             System.out.println("Even number");
         }
         System.out.println("Bye!");

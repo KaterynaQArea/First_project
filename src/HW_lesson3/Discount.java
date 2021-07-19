@@ -12,7 +12,7 @@ public class Discount {
             a = a - (a / 100) * 15;
             System.out.println("Purchase amount discounted:" + a);
         } else {
-                System.out.println("You don't have a discount");
-            }
+            System.out.println("You don't have a discount");
+        }
     }
 }

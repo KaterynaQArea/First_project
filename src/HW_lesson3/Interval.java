@@ -8,7 +8,7 @@ public class Interval {
         System.out.println("Enter the number:");
         double num = s.nextDouble();
 
-        if (-5 < num && num < 3){
+        if (-5 < num && num < 3) {
             System.out.println("The number belongs to the interval");
         } else {
             System.out.println("The number doesn't belong to the interval");

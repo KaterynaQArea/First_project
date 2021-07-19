@@ -17,11 +17,10 @@ public class Equation {
         if (a == 0 && b < 0) {
             System.out.println("The value x tends to ∞");
         } else if (a == 0 && b > 0) {
-                System.out.println("The value x tends to -∞");
+            System.out.println("The value x tends to -∞");
         } else if (b == 0) {
             System.out.println("x = " + x);
-        }
-        else {
+        } else {
             x = -b / a;
             System.out.println("x = " + x);
         }

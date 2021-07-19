@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Finger {
     public static void main(String[] args) {
-    Scanner s = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
         System.out.println("Enter the number of the finger:");
         int num = s.nextInt();
 
-        switch(num) {
+        switch (num) {
             case 1:
                 System.out.println("Thumb");
                 break;

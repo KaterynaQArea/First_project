@@ -12,7 +12,7 @@ public class Divisor {
         System.out.println("Enter the second number b: ");
         double b = num2.nextDouble();
 
-        if( b % a == 0 ){
+        if (b % a == 0) {
             System.out.println("Number a is the divisor of b");
         } else {
             System.out.println("Number a isn't a divisor of b");

@@ -17,9 +17,9 @@ public class CircleSquare {
         double d = 2 * r;
         double a = Math.sqrt(square); // side of the square
         double h = Math.sqrt(2) * a; // diagonal of the square
-        if (a >= d){
+        if (a >= d) {
             System.out.println("The circle can be placed inside the square");
-        } else if (h <= d){
+        } else if (h <= d) {
             System.out.println("The square can be placed inside the circle");
         } else {
             System.out.println("The circle can't be placed inside the square");
