@@ -23,6 +23,9 @@ public class Dice {
             System.out.println(i + " throw of dice:");
             System.out.println("You are on the " + move + " field");
             System.out.println("You have to pass " + remain + " fields");
+            if (remain == 0) {
+                break;
+            }
         }
         System.out.println("\nYou scored: " + move);
         if (move != 20) {
@@ -32,5 +35,6 @@ public class Dice {
         }
     }
 }
+
 
 
