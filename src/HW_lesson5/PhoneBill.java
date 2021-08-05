@@ -5,9 +5,9 @@ public class PhoneBill {
         MonthlyPayment payment = new MonthlyPayment();
         double internet = payment.internet(11);
         System.out.println("Payment for the internet: " + internet + " hrn");
-        double calls = payment.calls(400);
+        double calls = payment.calls(1000);
         System.out.println("Payment for the calls: " + calls + " hrn");
-        double sms = payment.sms(25);
+        double sms = payment.sms(100);
         System.out.println("Payment for the sms: " + sms + " hrn");
         double abroad1 = payment.callsAbroadZone1(5);
         System.out.println("Payment for the abroad calls Zone 1: " + abroad1 + " hrn");
@@ -34,7 +34,8 @@ class MonthlyPayment {
         if (minutes <= 500) {
             pay = minutes * 0.5;
         } else {
-            pay = minutes * 0.75;
+            int overMinutes = minutes - 500;
+            pay = 250 + overMinutes * 0.75;
         }
         return pay;
     }
@@ -43,7 +44,8 @@ class MonthlyPayment {
         if (sms <= 50) {
             pay = sms;
         } else {
-            pay = sms * 1.5;
+            int overSms = sms - 50;
+            pay = 50 + overSms * 1.5;
         }
         return pay;
     }
