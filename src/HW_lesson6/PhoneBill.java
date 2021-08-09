@@ -8,10 +8,20 @@ public class PhoneBill {
 }
 
 class GetPhoneBill {
+    private final double gig;
+    private final int minutes;
+    private final int sms;
+    private final int minutes1;
+    private final int minutes2;
     private double pay;
 
     public GetPhoneBill(double gig, int minutes, int sms, int minutes1, int minutes2) {
-        this.pay = CalculatePhoneBill(gig, minutes, sms, minutes1, minutes2);
+        this.gig = gig;
+        this.minutes = minutes;
+        this.sms = sms;
+        this.minutes1 = minutes1;
+        this.minutes2 = minutes2;
+        pay = CalculatePhoneBill(gig, minutes, sms, minutes1, minutes2);
     }
 
     public double getPhoneBill() {

@@ -25,7 +25,7 @@ class SalesAgentSalary {
     public SalesAgentSalary(int hours, double rate) {
         this.hours = hours;
         this.rate = rate;
-        this.salary = setSalary(hours, rate);
+        salary = setSalary(hours, rate);
     }
 
     public SalesAgentSalary(int hours, double rate, int years, int numberOfSales, double sumOfSales) {
@@ -34,7 +34,7 @@ class SalesAgentSalary {
         this.years = years;
         this.numberOfSales = numberOfSales;
         this.sumOfSales = sumOfSales;
-        this.salary = setSalary(hours, rate, years, numberOfSales, sumOfSales);
+        salary = setSalary(hours, rate, years, numberOfSales, sumOfSales);
     }
 
     public double getSalary() {
