@@ -16,6 +16,6 @@ public class SumException {
                 i--;
             }
         }
-        System.out.println("The sum of numbers: " + sum);
+        System.out.println("The sum of numbers is equal: " + sum);
     }
 }
