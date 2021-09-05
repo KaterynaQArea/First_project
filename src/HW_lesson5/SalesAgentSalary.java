@@ -15,7 +15,7 @@ public class SalesAgentSalary {
         System.out.println("Bonus for sales is equal: " + bonusForNumberOfSales + "$");
         double bonusForSumOfSales = salary.bonusForSumOfSales(36578.50);
         System.out.println("Bonus for sum of sales is equal: " + bonusForSumOfSales + "$");
-        double finalSalary = salary.finalSalary(hours, rate, coefficient, overtimeBonus, bonusForNumberOfSales, bonusForSumOfSales);
+        double finalSalary = salary.finalSalary(rate, coefficient, overtimeBonus, bonusForNumberOfSales, bonusForSumOfSales);
         System.out.println("Salary is equal: " + finalSalary + "$");
     }
 }
@@ -63,7 +63,7 @@ class Salary {
         return bonus;
     }
 
-    double finalSalary(int hours, double rate, double coefficient, double overtimeBonus, double bonusForNumberOfSales, double bonusForSumOfSales) {
+    double finalSalary(double rate, double coefficient, double overtimeBonus, double bonusForNumberOfSales, double bonusForSumOfSales) {
         double salary = 160 * rate * coefficient + overtimeBonus + bonusForNumberOfSales + bonusForSumOfSales;
         return salary;
     }
